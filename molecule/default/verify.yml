@@ -1,0 +1,25 @@
+---
+- name: Verify
+  hosts: all
+  gather_facts: true
+  tasks:
+    - name: Set download directory for all users to use
+      ansible.builtin.set_fact:
+        rke_runtime_dir: "/usr/local/bin"
+
+    - name: Find the rke file
+      ansible.builtin.stat:
+        path: "{{ rke_runtime_dir }}/rke"
+      register: rke_file
+
+    - name: Print stat info
+      ansible.builtin.debug:
+        msg: "{{ rke_file.stat }}"
+
+    - name: Assert that rke exists
+      ansible.builtin.assert:
+        that: rke_file.stat.exists
+
+    - name: Assert that rke is executable
+      ansible.builtin.assert:
+        that: rke_file.stat.executable
