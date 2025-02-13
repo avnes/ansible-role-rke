@@ -8,4 +8,4 @@ on:
 
 jobs:
   shared:
-    uses: avnes/action-workflows/.github/workflows/ansible-pr-validator.yaml@main
+    uses: avnes/actions-workflows/.github/workflows/ansible-pr-validator.yaml@main
