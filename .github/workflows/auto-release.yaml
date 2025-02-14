@@ -15,4 +15,4 @@ on:
 
 jobs:
   shared:
-    uses: avnes/actions-workflows/.github/workflows/auto-release-on-merge@main
+    uses: avnes/actions-workflows/.github/workflows/auto-release-on-merge.yaml@main
