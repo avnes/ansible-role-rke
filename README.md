@@ -1,6 +1,6 @@
 # ansible-role-rke
 
-![Ansible](https://github.com/avnes/ansible-role-rke/actions/workflows/ansible.yaml/badge.svg)
+[![Publish to Ansible Galaxy](https://github.com/avnes/ansible-role-rke/actions/workflows/galaxy-publish.yaml/badge.svg)](https://github.com/avnes/ansible-role-rke/actions/workflows/galaxy-publish.yaml)
 
 Ansible role for installing rke.
 
